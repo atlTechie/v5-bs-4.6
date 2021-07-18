@@ -12,18 +12,21 @@ block screen-content
     block shopping-header
         include ./includes/shopping-header-and-sections.pug
 
-    .row.mb-3
+    .row.mb-3.py-3
         .col-12
             h2.section-title.text-center Featured Departments
-    .row.justify-content-center.mb-3
+    .row.justify-content-center
         -for(i=0;i<7;i++) 
             .col-6.col-lg-4.mb-3.text-center
-                .card.mb-2.p-0
-                    
-                        .featured-category-img-wrapper.bg-warning
-                            a(href="#") 
-                                img.featured-category-img.img-fluid(src="./images/shopping/featured-departments/apple.jpg" alt="")
+                .card.p-0.mb-2
+                    .featured-category-img-wrapper
+                        a(href="#") 
+                            img.featured-category-img.img-fluid(src="./images/shopping/featured-departments/apple.jpg" alt="")
                 a(href="#") 
-                    h6.featured-category-category-title
+                    h6.featured-category-category-title Category Title
+    
+    block catalog-disclaimer
+        .row.justify-content-center#catalog-disclaimer 
+            small.d-block.text-center.text-muted Some content is provided by a third party on an as-is basis. This content is subject to change and/or removal at any time. Points and availability of items are subject to change.
 
 

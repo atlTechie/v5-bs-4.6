@@ -41,21 +41,7 @@ var featuredDepartments = [
     }
     ]
 
-// console.log(featuredDepartments);
 
-for(i=0; i<featuredDepartments.length; i++){
-
-    let dept = featuredDepartments[i].src;
-    console.log(dept)
-  let deptTag = document.querySelectorAll(".featured-category-title");
-//   console.log(deptTag);
-for(j=0; j< deptTag.length; j++){
-    console.log(deptTag[j].src);
-}
- 
-//    document.querySelectorAll(".featured-category-img img").src = featuredDepartments[i].name;
-
-}
 
 
 
