@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Main CSS Styling-->
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping | V5-Bootstrap-V5</title>
+</head>
+<body>
+  <header class="bg-primary"> 
+    <div class="container-fluid"> 
+      <div class="row justify-content-center align-items-center"> 
+        <div class="col-4 col-md-3 col-lg-2 bg-warning theme-logo-wrapper"> <a class="navbar-brand" href="/"> <img class="img-fluid" src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png" alt=""></a></div>
+        <div class="col-8 col-md-9 col-lg-10 bg-danger header-info-wrapper text-end"> 
+          <ul class="d-flex text-white list-unstyled ms-auto justify-content-end my-3"> 
+            <li class="me-3 pe-3"><a class="text-white" href="./history.html">My Account </a></li>
+            <li> <a class="text-white" href="./contact.html">Contact </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid bg-light">             
+    <div class="row">
+      <div class="col-12 bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+<main class="py-3">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-12">
+        <h1 class="screen-title text-center">Shopping</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" id="main-content">
+        <div class="row align-items-center justify-content-between mb-3" id="shopping-navigation">
+          <div class="col-6 col-sm-4 col-md-3 order-1"> <a class="btn btn-primary w-100 d-xl-none" id="dept-btn-mobile" href="#">Departments</a><a class="btn btn-secondary w-100 d-none d-xl-block" id="dept-btn" href="#">Departments</a></div>
+          <div class="col-6 col-sm-3 col-md-3 col-lg-2 text-end order-2 order-md-3">
+            <div class="row justify-content-between" id="shopping-navigation-order-links"> 
+              <div class="col-3"><a href="#">
+                  <div class="fas fa-shopping-cart"></div></a></div>
+              <div class="col-3"><a href="#">
+                  <div class="fas fa-heart"></div></a></div>
+              <div class="col-3"><a href="#">
+                  <div class="fas fa-box"></div></a></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-7 order-3 order-md-2">
+            <div class="input-group"><span class="d-none d-lg-inline">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected="">All Departments</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select></span>
+              <input class="form-control" type="text" aria-label="Amount (to the nearest dollar)"><span><a class="btn btn-primary" href="#">
+                  <div class="fas fa-search"></div></a></span>
+            </div>
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-12" id="shopping-header-image-wrapper"> <img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/ghp-MMT-434731-laptops-7d159922-f3e4-4cf9-a1b3-797689d4a3bc.jpg" alt=""></div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-12" id="shopping-sections">
+            <div class="btn-group w-100" role="group" aria-label="Basic example">
+              <button class="btn btn-primary" type="button" style="border-top-left-radius: 0px;">Catalog</button>
+              <button class="btn btn-primary" type="button">Events</button>
+              <button class="btn btn-primary" type="button" style="border-top-right-radius: 0px;">Travel</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-12">
+            <h2 class="section-title text-center">Featured Departments</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-6 col-lg-4 mb-3 text-center">
+            <div class="card mb-2 p-0">
+              <div class="featured-category-img-wrapper bg-warning"><a href="#"> <img class="featured-category-img img-fluid" src="./images/shopping/featured-departments/apple.jpg" alt=""></a></div>
+            </div><a href="#"> 
+              <h6 class="featured-category-category-title"></h6></a>
+          </div>
+          <div class="col-6 col-lg-4 mb-3 text-center">
+            <div class="card mb-2 p-0">
+              <div class="featured-category-img-wrapper bg-warning"><a href="#"> <img class="featured-category-img img-fluid" src="./images/shopping/featured-departments/apple.jpg" alt=""></a></div>
+            </div><a href="#"> 
+              <h6 class="featured-category-category-title"></h6></a>
+          </div>
+          <div class="col-6 col-lg-4 mb-3 text-center">
+            <div class="card mb-2 p-0">
+              <div class="featured-category-img-wrapper bg-warning"><a href="#"> <img class="featured-category-img img-fluid" src="./images/shopping/featured-departments/apple.jpg" alt=""></a></div>
+            </div><a href="#"> 
+              <h6 class="featured-category-category-title"></h6></a>
+          </div>
+          <div class="col-6 col-lg-4 mb-3 text-center">
+            <div class="card mb-2 p-0">
+              <div class="featured-category-img-wrapper bg-warning"><a href="#"> <img class="featured-category-img img-fluid" src="./images/shopping/featured-departments/apple.jpg" alt=""></a></div>
+            </div><a href="#"> 
+              <h6 class="featured-category-category-title"></h6></a>
+          </div>
+          <div class="col-6 col-lg-4 mb-3 text-center">
+            <div class="card mb-2 p-0">
+              <div class="featured-category-img-wrapper bg-warning"><a href="#"> <img class="featured-category-img img-fluid" src="./images/shopping/featured-departments/apple.jpg" alt=""></a></div>
+            </div><a href="#"> 
+              <h6 class="featured-category-category-title"></h6></a>
+          </div>
+          <div class="col-6 col-lg-4 mb-3 text-center">
+            <div class="card mb-2 p-0">
+              <div class="featured-category-img-wrapper bg-warning"><a href="#"> <img class="featured-category-img img-fluid" src="./images/shopping/featured-departments/apple.jpg" alt=""></a></div>
+            </div><a href="#"> 
+              <h6 class="featured-category-category-title"></h6></a>
+          </div>
+          <div class="col-6 col-lg-4 mb-3 text-center">
+            <div class="card mb-2 p-0">
+              <div class="featured-category-img-wrapper bg-warning"><a href="#"> <img class="featured-category-img img-fluid" src="./images/shopping/featured-departments/apple.jpg" alt=""></a></div>
+            </div><a href="#"> 
+              <h6 class="featured-category-category-title"></h6></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer><small class="bg-dark text-light d-block p-3 text-center">Copyright &copy; 2021</small></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="app.js"></script>

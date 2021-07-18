@@ -1,0 +1,29 @@
+extends index.pug
+
+block doc-title
+    title Shopping | V5-Bootstrap-V5
+
+block screen-title
+    h1.screen-title.text-center Shopping
+
+block screen-content
+    include ./includes/shopping-navigation.pug 
+
+    block shopping-header
+        include ./includes/shopping-header-and-sections.pug
+
+    .row.mb-3
+        .col-12
+            h2.section-title.text-center Featured Departments
+    .row.justify-content-center.mb-3
+        -for(i=0;i<7;i++) 
+            .col-6.col-lg-4.mb-3.text-center
+                .card.mb-2.p-0
+                    
+                        .featured-category-img-wrapper.bg-warning
+                            a(href="#") 
+                                img.featured-category-img.img-fluid(src="./images/shopping/featured-departments/apple.jpg" alt="")
+                a(href="#") 
+                    h6.featured-category-category-title
+
+
