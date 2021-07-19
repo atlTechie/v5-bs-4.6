@@ -1,0 +1,37 @@
+extends shopping.pug
+
+block doc-title
+    title Events | V5-Bootstrap-V5
+
+block screen-title
+    h1.screen-title.text-center Events
+
+block screen-content
+    include ./includes/shopping-navigation.pug 
+    block shopping-header
+    include ./includes/top-categories-icon-row
+    .row.mb-3 
+        .col-12
+            .category-img-wrapper
+                img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/theaterheader.png", alt="") 
+        .col-12#breadcrumb 
+            nav(aria-label='breadcrumb')
+                ol.breadcrumb
+                    li.breadcrumb-item
+                        a(href='#') Top Level
+                    li.breadcrumb-item
+                        a(href='#') Theatre
+                    li.breadcrumb-item.active(aria-current='page') Data
+    .row#categoriesBrowser.mb-3
+        -for(i=0; i<4; i++) 
+            .col-sm-6.col-lg-3 
+                ul.list-group.list-unstyled
+                    -for(j=0; j<4; j++) 
+                        li.list-group-item.border-0 
+                            a.d-flex.align-items-center(href="#")  
+                                span.fas.fa-dot-circle.mr-2 
+                                span Top Category Listing Goes Here
+
+     
+    block catalog-disclaimer
+        include ./includes/catalog-disclaimer.pug
