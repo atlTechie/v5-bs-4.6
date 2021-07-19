@@ -4,19 +4,32 @@ block doc-title
     title Events | V5-Bootstrap-V5
 
 block screen-title
-    h1.screen-title.text-center Shopping
+    h1.screen-title.text-center Events
 
 block screen-content
     include ./includes/shopping-navigation.pug 
 
     block shopping-header
-        
 
 
-    .row.mb-3.py-3
-        .col-12
-            h2.section-title.text-center Featured Departments
-    include ./includes/search-results-grid.pug
+    include ./includes/top-categories-icon-row
+
+    include ./includes/featured-event-content.pug
+    .row.mx-auto 
+        .col-12.pl-0 
+            h4 Featured Categories
+    .row.mb-3
+        .col-4.text-center
+            a(href="#")
+                img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/sports.jpg", alt="")  
+        .col-4.text-center
+            a(href="#")
+                img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/concerts.jpg", alt="")  
+        .col-4.text-center
+            a(href="#")
+                img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/theater.jpg", alt="")  
+
+ 
     
     block catalog-disclaimer
         include ./includes/catalog-disclaimer.pug
