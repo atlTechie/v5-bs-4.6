@@ -1,0 +1,38 @@
+.row.mb-3#shipping-address-section
+    .col-12
+        h4.border-bottom.pb-2.mb-3 Order Shipping Address
+    .col-12 
+        .alert.alert-warning 
+            p.mb-0 
+                span.font-weight-bold.text-uppercase Important 
+                span Your Email Address and Mailing Address must be accurate in order to receive your tickets. Changing the address in your profile may affect sales tax and can change the points required.
+    .col-12
+        form(action="")
+            .form-group.mb-3
+                label(for='exampleFormControlInput1') Recipient Name
+                input#exampleFormControlInput1.form-control(type='text')
+            .row.mb-3 
+                .col-12.col-md-6
+                    .form-group.mb-3
+                        label(for='exampleFormControlInput2') Email
+                        input#exampleFormControlInput2.form-control(type='email')
+                .col-12.col-md-6
+                    .form-group.mb-3
+                        label(for='exampleFormControlInput3') Phone
+                        input#exampleFormControlInput3.form-control(type='text')
+            .form-group.mb-3
+                label(for='exampleFormControlInput4') Street Address
+                input#exampleFormControlInput4.form-control(type='text')
+            .row.mb-3
+                .col-12.col-md-6
+                    .form-group.mb-3
+                        label(for='exampleFormControlInput5') City
+                        input#exampleFormControlInput5.form-control(type='email')
+                .col-12.col-md-2
+                    .form-group.mb-3
+                        label(for='exampleFormControlInput6') State
+                        input#exampleFormControlInput6.form-control(type='text')
+                .col-12.col-md-4
+                    .form-group.mb-3
+                        label(for='exampleFormControlInput7') Zip Code
+                        input#exampleFormControlInput7.form-control(type='text')

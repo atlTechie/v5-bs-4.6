@@ -1,0 +1,16 @@
+extends shopping.pug
+
+block doc-title
+    title Events | V5-Bootstrap-V5
+
+block screen-title
+    h1.screen-title.text-center Purchase Tickets
+
+block screen-content
+    include ./includes/shopping-navigation.pug 
+    block shopping-header
+    include ./includes/events-purchase-tickets-ticket-info.pug
+    include ./includes/events-purchase-tickets-ticket-price.pug
+
+    block catalog-disclaimer
+        include ./includes/catalog-disclaimer.pug
