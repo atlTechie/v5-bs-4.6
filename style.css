@@ -116,6 +116,15 @@ h1 {
      object-position: center;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+.departmenttop.departmentnode a {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 @media (min-width: 768px) {
   .featured-category-img-wrapper {
     height: 190px;
