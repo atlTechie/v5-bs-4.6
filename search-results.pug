@@ -1,0 +1,22 @@
+extends index.pug
+
+block doc-title
+    title Search Results | V5-Bootstrap-V5
+
+block screen-title
+    h1.screen-title.text-center Search Results
+
+block screen-content
+    include ./includes/shopping-navigation.pug 
+    
+    include ./includes/search-results-grid.pug
+
+    include ./includes/pagination.pug
+
+
+    include ./includes/search-results-footer.pug
+            
+    block catalog-disclaimer
+        include ./includes/catalog-disclaimer.pug
+
+
