@@ -1,5 +1,10 @@
 
+$(document).ready(function(){
+    console.log('Jquery is running')
+  });
+
 console.log('app.js running');
+
 
 // Shopping - Featured Departments
 

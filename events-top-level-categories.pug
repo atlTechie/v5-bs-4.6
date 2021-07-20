@@ -13,24 +13,24 @@ block screen-content
     .row.mb-3 
         .col-12
             .category-img-wrapper
-                img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/theaterheader.png", alt="") 
+                block category-header-img
+                    img.img-fluid(src="https://images.pexels.com/photos/433452/pexels-photo-433452.jpeg", alt="") 
         .col-12#breadcrumb 
             nav(aria-label='breadcrumb')
                 ol.breadcrumb
                     li.breadcrumb-item
-                        a(href='#') Top Level
-                    li.breadcrumb-item
-                        a(href='#') Theatre
-                    li.breadcrumb-item.active(aria-current='page') Data
+                        a(href='./events.html') Events
+                    block breadcrumb-current-page
+                        //- li.breadcrumb-item.active(aria-current='page') 
     .row#categoriesBrowser.mb-3
         -for(i=0; i<4; i++) 
             .col-sm-6.col-lg-3 
                 ul.list-group.list-unstyled
                     -for(j=0; j<4; j++) 
-                        li.list-group-item.border-0 
-                            a.d-flex.align-items-center(href="#")  
-                                span.fas.fa-dot-circle.mr-2 
-                                span Top Category Listing Goes Here
+                        li.list-group-item.border-0
+                            block second-level-category 
+                                a.d-flex.align-items-center(href="./events-second-level-categories.html")
+                                    span Top Level Category Listing (Basketball, Hip Hop, Magic Show) 
 
      
     block catalog-disclaimer

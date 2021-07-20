@@ -1,0 +1,99 @@
+form(action="")           
+    .row
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput2') First Name
+                input#exampleFormControlInput2.form-control(type='text')
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput3') Last Name
+                input#exampleFormControlInput3.form-control(type='text')
+    .row
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput4') Birth Date
+                input#exampleFormControlInput4.form-control(type='date')
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput5') Hire Date
+                input#exampleFormControlInput5.form-control(type='date')
+    .row
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput6') Phone Number
+                input#exampleFormControlInput6.form-control(type='phone')
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput7') Email Address
+                input#exampleFormControlInput7.form-control(type='email')
+    
+    .form-group
+        label(for='exampleFormControlInput8') Communication Preference
+        select#exampleFormControlInput8.form-select.custom-select(aria-label='Default select example')
+            option(value='1') Email
+            option(value='2') SMS
+            option(value='3') Push
+    
+    .form-group
+        label(for='exampleFormControlInput9') Street Address
+        input#exampleFormControlInput9.form-control(type='text')
+    .form-group
+        label(for='exampleFormControlInput10') Address 2
+        input#exampleFormControlInput10.form-control(type='text')
+    .row
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput6') City
+                input#exampleFormControlInput6.form-control(type='phone')
+        .col-12.col-md-2
+            .form-group
+                label(for='exampleFormControlInput7') State
+                input#exampleFormControlInput7.form-control(type='email')
+        .col-12.col-md-4
+            .form-group
+                label(for='exampleFormControlInput8') Zip
+                input#exampleFormControlInput7.form-control(type='email')
+    .form-group.mb-4
+        label(for='exampleFormControlInput8') Country
+        select#exampleFormControlInput8.form-select.custom-select(aria-label='Default select example')
+            option(value='1') United States
+            option(value='2') Canada
+            option(value='3') Jamaica
+    
+    .form-group
+        label(for='exampleFormControlInput9') SSN
+        input#exampleFormControlInput9.form-control(type='text')
+    .form-group.border-bottom 
+        h3 Security Questions
+
+    .form-group
+        label(for='exampleFormControlInput10') What type of car do you drive?
+        input#exampleFormControlInput10.form-control(type='text')
+
+    .form-group
+        label(for='exampleFormControlInput11') Tracking Code
+        input#exampleFormControlInput11.form-control(type='text')
+    .form-group
+        h3.border-bottom.pb-2  Create Password 
+        p Passwords must be at least 8 characters and include at least one upper case letter, one lower case letter, and one number.
+    .row
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput12') Password
+                input#exampleFormControlInput12.form-control(type='password')
+        .col-12.col-md-6
+            .form-group
+                label(for='exampleFormControlInput13') Confirm Password
+                input#exampleFormControlInput13.form-control(type='password')
+    .form-group
+        .form-check
+            input#defaultCheck1.form-check-input(type='checkbox' value='')
+            label.form-check-label(for='defaultCheck1')
+                span I have read and accept the 
+                    span 
+                        a(href="./terms.html")  Terms of Use Agreement 
+                        span that governs the site which includes my consent to receive program related emails.
+
+    .row
+        .col-12.col-md-6.mx-auto.text-center
+            a.btn.btn-primary(href="#") Complete Enrollment
